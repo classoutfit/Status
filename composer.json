@@ -1,0 +1,25 @@
+{
+    "name": "classoutfit/status",
+    "description": "A helper plugin to help render status labels uniformly.",
+	"type": "cakephp-plugin",
+	"keywords": [
+        "cakephp"
+    ],
+	"homepage": "http://classoutfit.com",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Jeremy Burns",
+			"homepage": "http://classoutfit.com",
+			"role": "Author"
+		}
+	],
+    "require": {
+		"cakephp/cakephp": "~2.8",
+        "php": "^5.6",
+		"composer/installers": "*"
+	},
+	"extra": {
+		"installer-name": "Status"
+	}
+}
