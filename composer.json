@@ -1,6 +1,6 @@
 {
     "name": "classoutfit/status",
-    "description": "A helper plugin to help render status labels uniformly.",
+    "description": "A helper plugin to help render status labels consistently.",
 	"type": "cakephp-plugin",
 	"keywords": [
         "cakephp"
