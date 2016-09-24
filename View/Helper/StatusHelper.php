@@ -2,30 +2,31 @@
 
 class StatusHelper extends AppHelper {
 
-	var $helpers = ['Html'];
-	
-	public function status($style = null, $label = null, $url = []) {
-	
-		$class = !$style
-			? 'label'
-			: 'label label-'.$style
-		;
-		
-		$output = '<span class="'.$class.'">';
-		
-		if ($url) {
-			$output .= $this->Html->link(
-				$label,
-				$url
-			);
-		} else {
-			$output .= $label;
-		}
+    var $helpers = ['Html'];
 
-		$output .= '</span>';
+    public function status($style = null, $label = null, $url = [], $domElement = 'span')
+    {
 
-		return $output;
-	
-	}
-	
+        $class = !$style
+            ? 'label'
+            : 'label label-'.$style
+        ;
+
+        $output = '<' . $domElement . ' class="'. $class . '">';
+
+        if ($url) {
+            $output .= $this->Html->link(
+                $label,
+                $url
+            );
+        } else {
+            $output .= $label;
+        }
+
+        $output .= '</' . $domElement . '>';
+
+        return $output;
+
+    }
+
 }
